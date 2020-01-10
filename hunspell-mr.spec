@@ -1,7 +1,7 @@
 Name: hunspell-mr
 Summary: Marathi hunspell dictionaries
 Version: 20060920 
-Release: 14%{?dist}
+Release: 15%{?dist}
 Source: http://downloads.sourceforge.net/project/openofficeorg.mirror/contrib/dictionaries/mr_IN.zip
 Patch0: hunspell-mr-get-rid-of-broken-line.patch 
 Group: Applications/Text
@@ -33,6 +33,9 @@ cp -p mr_IN.dic mr_IN.aff $RPM_BUILD_ROOT/%{_datadir}/myspell
 %{_datadir}/myspell/*
 
 %changelog
+* Fri Dec 27 2013 Daniel Mach <dmach@redhat.com> - 20060920-15
+- Mass rebuild 2013-12-27
+
 * Tue May 28 2013 Parag Nemade <pnemade AT redhat DOT com> - 20060920-14
 - Removed BR:dos2unix and instead use sed (rh# 967639)
 
